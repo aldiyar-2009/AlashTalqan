@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alash Talqan — тары талқаны в стакане</title>
+<meta name="description" content="Alash Talqan — казахский тары талқаны в стакане с ложкой внутри. Состав, хранение и история Алаш.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Literata:opsz,wght@7..72,500;7..72,700;7..72,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="Alash Talqan">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V9M12 9c0-3 1.5-5 4-6 .6 3-.9 5.300-4 6Zm0 5c0-2.800-1.600-4.600-4.500-5.200-.4 3 1.300 5 4.500 5.200Zm0 4c0-2.800 1.600-4.600 4.500-5.200.4 3-1.300 5-4.500 5.200Z" fill="none" stroke="currentColor" stroke-width="1.700" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Alash Talqan</span>
+  </a>
+  <nav class="nav" aria-label="Main">
+    <a href="#product" data-i18n="nav.product"></a>
+    <a href="#alash" data-i18n="nav.story"></a>
+    <a href="#prep" data-i18n="nav.prep"></a>
+    <a href="#contact" data-i18n="nav.contact"></a>
+  </nav>
+  <div class="lang" role="group" aria-label="Тіл / Язык">
+    <button type="button" data-lang="kk" aria-pressed="false">Қаз</button>
+    <button type="button" data-lang="ru" aria-pressed="false">Рус</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="scene" id="scene" aria-label="Alash Talqan">
+    <span class="anchor" id="product" style="--at:1"></span>
+    <span class="anchor" id="alash" style="--at:5"></span>
+
+    <div class="stage" id="stage">
+      <svg class="shanyrak" viewBox="0 0 400 400" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round">
+          <circle cx="200" cy="200" r="190"/>
+          <circle cx="200" cy="200" r="168"/>
+          <path d="M40 150Q200 100 360 150M32 200Q200 150 368 200M40 250Q200 200 360 250"/>
+          <path d="M150 40Q100 200 150 360M200 32Q150 200 200 368M250 40Q200 200 250 360"/>
+        </g>
+      </svg>
+      <div class="grains" id="grains" aria-hidden="true"></div>
+
+      <div class="hero" id="hero">
+        <h1 class="hero-word hero-word--l" aria-label="Alash Talqan">Alash</h1>
+        <div class="hero-word hero-word--r" aria-hidden="true">Talqan</div>
+        <p class="hero-lede" data-i18n="hero.lede"></p>
+        <p class="hero-hint" data-i18n="hero.hint"></p>
+      </div>
+
+      <canvas id="cup" class="cup" role="img" aria-label="Alash Talqan"></canvas>
+
+      <div class="cards" id="cards">
+        <article class="card card--millet" data-step="1" data-side="l" style="--y:40%">
+          <h2 data-i18n="comp.title"></h2>
+          <p data-i18n="comp.body"></p>
+          <ul class="plain">
+            <li data-i18n="comp.i1"></li>
+            <li data-i18n="comp.i2"></li>
+            <li data-i18n="comp.i3"></li>
+          </ul>
+        </article>
+
+        <article class="card card--teal" data-step="3" data-side="l" style="--y:56%">
+          <h2 data-i18n="store.title"></h2>
+          <dl class="facts">
+            <div><dt data-i18n="store.tempLabel"></dt><dd>+2…+6 °C</dd></div>
+            <div><dt data-i18n="store.lifeLabel"></dt><dd data-i18n="store.life"></dd></div>
+          </dl>
+          <p data-i18n="store.body"></p>
+        </article>
+
+        <article class="card card--paper" data-step="2" data-side="r" style="--y:50%">
+          <h2 data-i18n="nutr.title"></h2>
+          <table class="nutr">
+            <tr><th data-i18n="nutr.protein"></th><td data-i18n="nutr.proteinV"></td></tr>
+            <tr><th data-i18n="nutr.fat"></th><td data-i18n="nutr.fatV"></td></tr>
+            <tr><th data-i18n="nutr.carb"></th><td data-i18n="nutr.carbV"></td></tr>
+            <tr><th data-i18n="nutr.energy"></th><td data-i18n="nutr.energyV"></td></tr>
+          </table>
+        </article>
+
+        <article class="card card--green" data-step="4" data-side="r" style="--y:38%">
+          <h2 data-i18n="spoon.title"></h2>
+          <p data-i18n="spoon.body"></p>
+        </article>
+
+        <article class="card card--story" data-step="5" data-side="l" style="--y:44%">
+          <h2 data-i18n="why.title"></h2>
+          <p data-i18n="why.body"></p>
+        </article>
+        <article class="card card--story" data-step="6" data-side="r" style="--y:52%">
+          <h2 data-i18n="qazaq.title"></h2>
+          <p data-i18n="qazaq.body"></p>
+        </article>
+        <article class="card card--story" data-step="7" data-side="l" style="--y:54%">
+          <h2 data-i18n="orda.title"></h2>
+          <p data-i18n="orda.body"></p>
+        </article>
+        <article class="card card--story" data-step="8" data-side="r" style="--y:44%">
+          <h2 data-i18n="memory.title"></h2>
+          <p data-i18n="memory.body"></p>
+        </article>
+      </div>
+
+      <div class="rail" aria-hidden="true"><i id="railFill"></i></div>
+    </div>
+  </section>
+
+  <section class="faces" id="faces">
+    <div class="faces-head">
+      <h2 data-i18n="faces.title"></h2>
+      <p data-i18n="faces.lede"></p>
+    </div>
+    <div class="faces-row">
+      <figure class="face">
+        <img src="assets/portrait-1.jpg" alt="Әлихан Бөкейхан" loading="lazy">
+        <figcaption><b>Әлихан Бөкейхан</b><span data-i18n="faces.c1"></span></figcaption>
+      </figure>
+      <figure class="face">
+        <img src="assets/portrait-2.jpg" alt="Ахмет Байтұрсынұлы" loading="lazy">
+        <figcaption><b>Ахмет Байтұрсынұлы</b><span data-i18n="faces.c2"></span></figcaption>
+      </figure>
+      <figure class="face">
+        <img src="assets/portrait-3.jpg" alt="Міржақып Дулатұлы" loading="lazy">
+        <figcaption><b>Міржақып Дулатұлы</b><span data-i18n="faces.c3"></span></figcaption>
+      </figure>
+    </div>
+    <div class="archive">
+      <figure class="archive-group">
+        <img src="assets/group-1926.jpg" alt="" loading="lazy">
+        <figcaption data-i18n="faces.group"></figcaption>
+      </figure>
+      <figure class="archive-paper">
+        <img src="assets/qazaq-1913.jpg" alt="" loading="lazy">
+        <figcaption data-i18n="faces.paper"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="field">
+    <img src="assets/field.jpg" alt="" loading="lazy">
+    <div class="field-text">
+      <h2 data-i18n="field.title"></h2>
+      <p data-i18n="field.body"></p>
+    </div>
+  </section>
+
+  <section class="prep" id="prep">
+    <div class="prep-scene" id="prepScene">
+      <div class="prep-stage">
+        <div class="frames" id="frames" aria-hidden="true">
+          <img src="assets/prep-1.jpg" alt="">
+          <img src="assets/prep-2.jpg" alt="">
+          <img src="assets/prep-3.jpg" alt="">
+          <img src="assets/prep-4.jpg" alt="">
+          <img src="assets/prep-5.jpg" alt="">
+          <img src="assets/prep-6.jpg" alt="">
+          <img src="assets/prep-7.jpg" alt="">
+        </div>
+        <div class="prep-text">
+          <h2 data-i18n="prep.title"></h2>
+          <ol class="steps" id="prepSteps">
+            <li data-i18n="prep.s1"></li>
+            <li data-i18n="prep.s2"></li>
+            <li data-i18n="prep.s3"></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="prep-pour">
+      <figure class="prep-photo"><img src="assets/milk.jpg" alt="" loading="lazy"></figure>
+      <div>
+        <h3 data-i18n="prep.pourTitle"></h3>
+      <div class="pour">
+      <div class="prep-figure" aria-hidden="true">
+      <svg viewBox="0 0 320 400" id="glass">
+        <defs>
+          <clipPath id="glassClip"><path d="M40 30H240L212 370H68Z"/></clipPath>
+        </defs>
+        <g clip-path="url(#glassClip)">
+          <rect x="0" y="0" width="320" height="400" fill="#FBF5E4"/>
+          <rect id="liquid" x="0" y="200" width="320" height="400" fill="#EBCB86"/>
+          <path id="wave" d="" fill="#F3DCA4"/>
+        </g>
+        <path d="M40 30H240L212 370H68Z" fill="none" stroke="#1B6B3C" stroke-width="5" stroke-linejoin="round"/>
+        <g id="ticks" font-family="Golos Text, sans-serif" font-size="13" fill="#1B6B3C"></g>
+      </svg>
+    </div>
+      <div class="pour-ctl">
+        <label for="ml" data-i18n="prep.slider"></label>
+        <input id="ml" type="range" min="150" max="300" step="10" value="200">
+        <p class="pour-out"><output id="mlOut" for="ml">200</output> <span data-i18n="prep.ml"></span><span class="pour-state" id="mlState"></span></p>
+      </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 data-i18n="contact.title"></h2>
+    <p data-i18n="contact.body"></p>
+    <div class="contact-actions">
+      <!-- TODO: подставить реальные ссылки клиента -->
+      <a class="btn btn--solid" href="https://wa.me/" data-i18n="contact.wa"></a>
+      <a class="btn" href="https://www.instagram.com/" data-i18n="contact.ig"></a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span data-i18n="foot.maker"></span>
+  <span data-i18n="foot.made"></span>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/cup.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
